@@ -1,0 +1,52 @@
+
+imports:
+
+- classpath:/org/kurator/akka/performance/types.yaml
+
+components:
+
+- id: TenNoopJavaActorsWorkflow
+  type: Workflow
+  properties:
+    actors:
+      - !ref ActorOne
+      - !ref ActorTwo
+      - !ref ActorThree
+      - !ref ActorFour
+      - !ref ActorFive
+      - !ref ActorSix
+      - !ref ActorSeven
+      - !ref ActorEight
+      - !ref ActorNine
+      - !ref ActorTen
+
+- id: ActorOne
+  type: NoOpJavaActor
+
+- id: ActorTwo
+  type: NoOpJavaActor
+
+- id: ActorThree
+  type: NoOpJavaActor
+
+- id: ActorFour
+  type: NoOpJavaActor
+
+- id: ActorFive
+  type: NoOpJavaActor
+
+- id: ActorSix
+  type: NoOpJavaActor
+
+- id: ActorSeven
+  type: NoOpJavaActor
+
+- id: ActorEight
+  type: NoOpJavaActor
+
+- id: ActorNine
+  type: NoOpJavaActor
+
+- id: ActorTen
+  type: NoOpJavaActor
+

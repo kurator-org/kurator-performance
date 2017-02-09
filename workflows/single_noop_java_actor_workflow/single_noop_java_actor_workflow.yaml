@@ -1,0 +1,15 @@
+
+imports:
+
+- classpath:/org/kurator/akka/performance/types.yaml
+
+components:
+
+- id: SingleNoopJavaActorWorkflow
+  type: Workflow
+  properties:
+    actors:
+      - !ref OnlyActor
+
+- id: OnlyActor
+  type: NoOpJavaActor

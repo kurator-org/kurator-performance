@@ -1,0 +1,92 @@
+
+imports:
+
+- classpath:/org/kurator/akka/types.yaml
+
+components:
+
+- id: SingleJythonActorWorkflow
+  type: Workflow
+  properties:
+    actors:
+      - !ref ActorOne
+      - !ref ActorTwo
+      - !ref ActorThree
+      - !ref ActorFour
+      - !ref ActorFive
+      - !ref ActorSix
+      - !ref ActorSeven
+      - !ref ActorEight
+      - !ref ActorNine
+      - !ref ActorTen
+
+- id: ActorOne
+  type: PythonActor
+  properties:
+    code: |
+        def on_start(options):
+          pass
+
+- id: ActorTwo
+  type: PythonActor
+  properties:
+    code: |
+        def on_start(options):
+          pass
+
+- id: ActorThree
+  type: PythonActor
+  properties:
+    code: |
+        def on_start(options):
+          pass
+
+- id: ActorFour
+  type: PythonActor
+  properties:
+    code: |
+        def on_start(options):
+          pass
+
+- id: ActorFive
+  type: PythonActor
+  properties:
+    code: |
+        def on_start(options):
+          pass
+
+- id: ActorSix
+  type: PythonActor
+  properties:
+    code: |
+        def on_start(options):
+          pass
+
+- id: ActorSeven
+  type: PythonActor
+  properties:
+    code: |
+        def on_start(options):
+          pass
+
+- id: ActorEight
+  type: PythonActor
+  properties:
+    code: |
+        def on_start(options):
+          pass
+
+- id: ActorNine
+  type: PythonActor
+  properties:
+    code: |
+        def on_start(options):
+          pass
+
+- id: ActorTen
+  type: PythonActor
+  properties:
+    code: |
+        def on_start(options):
+          pass
+
